@@ -1,6 +1,6 @@
 {
   "name": "better-match",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Use regular expressions to search strings!",
   "main": "index.js",
   "scripts": {
