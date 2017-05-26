@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/TehShrike/better-match/issues"
   },
-  "homepage": "https://github.com/TehShrike/better-match#readme"
+  "homepage": "https://github.com/TehShrike/better-match#readme",
+  "devDependencies": {
+    "jsmd": "0.3.1"
+  }
 }
