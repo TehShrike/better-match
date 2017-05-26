@@ -1,6 +1,7 @@
 # better-match
 
-So that I never have to use `regex.exec(string)` or `string.match(regex)` again
+- No need to remember to add `g` every time
+- returns an array of captures, making it usable in a functional manner
 
 ```sh
 npm i better-match
@@ -11,8 +12,15 @@ const betterMatch = require('./')
 -->
 
 ```js
-betterMatch(/(\d):(\d)/g, '1:4 5:6 2:3') // => [ [1, 4], [5, 6], [2, 3] ]
-betterMatch(/(?:^|\s)([^\s]{2})/g, 'lol butts') // => [ ['lo'], ['bu'] ]
+betterMatch(
+	/(\d):(\d)/,
+	'1:4 5:6 2:3'
+) // => [ [1, 4], [5, 6], [2, 3] ]
+
+betterMatch(
+	/(?:^|\s)([^\s]{2})/g,
+	'lol butts'
+) // => [ ['lo'], ['bu'] ]
 ```
 
 # License
