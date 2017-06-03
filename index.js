@@ -1,10 +1,10 @@
 module.exports = function match(regex, str) {
 	const definitelyGlobal = forceGlobal(regex)
-	let match = null
+	let lastMatch = null
 	const matches = []
 
-	while ((match = definitelyGlobal.exec(str)) !== null) {
-		const [ , ...captured ] = match
+	while ((lastMatch = definitelyGlobal.exec(str)) !== null) {
+		const [ , ...captured ] = lastMatch
 		matches.push(captured)
 	}
 
